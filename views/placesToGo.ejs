@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<!---one of the item pages--->
+<html>
+    <head>
+        <title>Tourist Attractions</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/jquery.comment.js"></script>
+        <link rel="stylesheet" href="/css/style1.css" type="text/css">
+    </head>
+    
+    <body>
+        <header>
+        <img src="/logo.png" class="logo" alt="logo">
+        <h3>IndoTravel</h3>
+	</header>
+
+	<section>
+		<nav>
+            <a href="Home.html">Home</a>
+            <a href="placesToGo.ejs">Tourist Attractions</a>
+            <a href="food.ejs">Indonesian Foods</a>
+            <a href="contactpage.html">Contact Us</a>
+        </nav>
+        <table>
+            <tr>
+                <th>Name</th><th>Description</th><th>Image</th><th>Rating</th>
+            </tr>
+            <!---the data from gist will be displayed in the table, besides data, we have to create rating function for each item--->
+            <!---I tried to input the rating with loop, but it did not work. So, I made 5 tables manually--->
+            <tr>
+                <td><%= data[0].Name %></td>
+                <td><%= data[0].Description %></td>
+                <td><img src="<%= data[0].Image %>"/></td>
+                <td>
+                    <form class="rating">
+                        <label>
+                            <input id="button1" type="radio" name="stars" value="Rate: 1.0★">
+                            <span class="icon">★</span>
+                        </label>
+                        <label>
+                            <input id="button2" type="radio" name="stars" value="Rate: 2.0★">
+                            <span class="icon">★</span>
+                        </label>
+                        <label>
+                            <input id="button3" type="radio" name="stars" value="Rate: 3.0★">
+                            <span class="icon">★</span>
+                        </label>
+                        <label>
+                            <input id="button4" type="radio" name="stars" value="Rate: 4.0★">
+                            <span class="icon">★</span>
+                        </label>
+                        <label>
+                            <input id="button5" type="radio" name="stars" value="Rate: 5.0★">
+                            <span class="icon">★</span>
+                        </label>
+                    </form><br>
+                    <p id="display"></p><br>
+                    <!---script for rating functionality...--->
+                    <script>
+                        $(document).ready(function(){
+                            $('#button1').hide();
+                            $('#button2').hide();
+                            $('#button3').hide();
+                            $('#button4').hide();
+                            $('#button5').hide();
+
+                            $('#button1').click(function(){
+                                $('#display').empty();
+                                var one = $(this).val();
+                                $('#display').append(one);
+                            });
+                            $('#button2').click(function(){
+                                $('#display').empty();
+                                var one = $(this).val();
+                                $('#display').append(one);
+                            });
+                            $('#button3').click(function(){
+                                $('#display').empty();
+                                var one = $(this).val();
+                                $('#display').append(one);
+                            });
+                            $('#button4').click(function(){
+                                $('#display').empty();
+                                var one = $(this).val();
+                                $('#display').append(one);
+                            });
+                            $('#button5').click(function(){
+                                $('#display').empty();
+                                var one = $(this).val();
+                                $('#display').append(one);
+                            });
+                        })
+                    </script>
+                </td>
+            </tr>
+            <tr>
+                <td><%= data[1].Name %></td>
+                <td><%= data[1].Description %></td>
+                <td><img src="<%= data[1].Image %>"/></td>
+                <td>
+                    <form class="rating">
+                        <label>
+                            <input id="button6" type="radio" name="stars" value="Rate: 1.0★">
+                            <span class="icon">★</span>
+                        </label>
+                        <label>
+                            <input id="button7" type="radio" name="stars" value="Rate: 2.0★">
+                            <span class="icon">★</span>
+                        </label>
+                        <label>
+                            <input id="button8" type="radio" name="stars" value="Rate: 3.0★">
+                            <span class="icon">★</span>
+                        </label>
+                        <label>
+                            <input id="button9" type="radio" name="stars" value="Rate: 4.0★">
+                            <span class="icon">★</span>
+                        </label>
+                        <label>
+                            <input id="button10" type="radio" name="stars" value="Rate: 5.0★">
+                            <span class="icon">★</span>
+                        </label>
+                    </form><br>
+                    <p id="display2"></p><br>
+                    <script>
+                        $(document).ready(function(){
+                            $('#button6').hide();
+                            $('#button7').hide();
+                            $('#button8').hide();
+                            $('#button9').hide();
+                            $('#button10').hide();
+
+                            $('#button6').click(function(){
+                                $('#display2').empty();
+                                var one = $(this).val();
+                                $('#display2').append(one);
+                            });
+                            $('#button7').click(function(){
+                                $('#display2').empty();
+                                var one = $(this).val();
+                                $('#display2').append(one);
+                            });
+                            $('#button8').click(function(){
+                                $('#display2').empty();
+                                var one = $(this).val();
+                                $('#display2').append(one);
+                            });
+                            $('#button9').click(function(){
+                                $('#display2').empty();
+                                var one = $(this).val();
+                                $('#display2').append(one);
+                            });
+                            $('#button10').click(function(){
+                                $('#display2').empty();
+                                var one = $(this).val();
+                                $('#display2').append(one);
+                            });
+                        })
+                    </script>
+                </td>
+            </tr>
+            <tr>
+                <td><%= data[2].Name %></td>
+                <td><%= data[2].Description %></td>
+                <td><img src="<%= data[2].Image %>"/></td>
+                <td>
+                    <form class="rating">
+                        <label>
+                            <input id="button11" type="radio" name="stars" value="Rate: 1.0★">
+                            <span class="icon">★</span>
+                        </label>
+                        <label>
+                            <input id="button12" type="radio" name="stars" value="Rate: 2.0★">
+                            <span class="icon">★</span>
+                        </label>
+                        <label>
+                            <input id="button13" type="radio" name="stars" value="Rate: 3.0★">
+                            <span class="icon">★</span>
+                        </label>
+                        <label>
+                            <input id="button14" type="radio" name="stars" value="Rate: 4.0★">
+                            <span class="icon">★</span>
+                        </label>
+                        <label>
+                            <input id="button15" type="radio" name="stars" value="Rate: 5.0★">
+                            <span class="icon">★</span>
+                        </label>
+                    </form><br>
+                    <p id="display3"></p><br>
+                    <script>
+                        $(document).ready(function(){
+                            $('#button11').hide();
+                            $('#button12').hide();
+                            $('#button13').hide();
+                            $('#button14').hide();
+                            $('#button15').hide();
+
+                            $('#button11').click(function(){
+                                $('#display3').empty();
+                                var one = $(this).val();
+                                $('#display3').append(one);
+                            });
+                            $('#button12').click(function(){
+                                $('#display3').empty();
+                                var one = $(this).val();
+                                $('#display3').append(one);
+                            });
+                            $('#button13').click(function(){
+                                $('#display3').empty();
+                                var one = $(this).val();
+                                $('#display3').append(one);
+                            });
+                            $('#button14').click(function(){
+                                $('#display3').empty();
+                                var one = $(this).val();
+                                $('#display3').append(one);
+                            });
+                            $('#button15').click(function(){
+                                $('#display3').empty();
+                                var one = $(this).val();
+                                $('#display3').append(one);
+                            });
+                        })
+                    </script>
+                </td>
+            </tr>
+            <tr>
+                <td><%= data[3].Name %></td>
+                <td><%= data[3].Description %></td>
+                <td><img src="<%= data[3].Image %>"/></td>
+                <td>
+                    <form class="rating">
+                        <label>
+                            <input id="button16" type="radio" name="stars" value="Rate: 1.0★">
+                            <span class="icon">★</span>
+                        </label>
+                        <label>
+                            <input id="button17" type="radio" name="stars" value="Rate: 2.0★">
+                            <span class="icon">★</span>
+                        </label>
+                        <label>
+                            <input id="button18" type="radio" name="stars" value="Rate: 3.0★">
+                            <span class="icon">★</span>
+                        </label>
+                        <label>
+                            <input id="button19" type="radio" name="stars" value="Rate: 4.0★">
+                            <span class="icon">★</span>
+                        </label>
+                        <label>
+                            <input id="button20" type="radio" name="stars" value="Rate: 5.0★">
+                            <span class="icon">★</span>
+                        </label>
+                    </form><br>
+                    <p id="display4"></p><br>
+                    <script>
+                        $(document).ready(function(){
+                            $('#button16').hide();
+                            $('#button17').hide();
+                            $('#button18').hide();
+                            $('#button19').hide();
+                            $('#button20').hide();
+
+                            $('#button16').click(function(){
+                                $('#display4').empty();
+                                var one = $(this).val();
+                                $('#display4').append(one);
+                            });
+                            $('#button17').click(function(){
+                                $('#display4').empty();
+                                var one = $(this).val();
+                                $('#display4').append(one);
+                            });
+                            $('#button18').click(function(){
+                                $('#display4').empty();
+                                var one = $(this).val();
+                                $('#display4').append(one);
+                            });
+                            $('#button19').click(function(){
+                                $('#display4').empty();
+                                var one = $(this).val();
+                                $('#display4').append(one);
+                            });
+                            $('#button20').click(function(){
+                                $('#display4').empty();
+                                var one = $(this).val();
+                                $('#display4').append(one);
+                            });
+                        })
+                    </script>
+                </td>
+            </tr>
+            <tr>
+                <td><%= data[4].Name %></td>
+                <td><%= data[4].Description %></td>
+                <td><img src="<%= data[4].Image %>"/></td>
+                <td>
+                    <form class="rating">
+                        <label>
+                            <input id="button21" type="radio" name="stars" value="Rate: 1.0★">
+                            <span class="icon">★</span>
+                        </label>
+                        <label>
+                            <input id="button22" type="radio" name="stars" value="Rate: 2.0★">
+                            <span class="icon">★</span>
+                        </label>
+                        <label>
+                            <input id="button23" type="radio" name="stars" value="Rate: 3.0★">
+                            <span class="icon">★</span>
+                        </label>
+                        <label>
+                            <input id="button24" type="radio" name="stars" value="Rate: 4.0★">
+                            <span class="icon">★</span>
+                        </label>
+                        <label>
+                            <input id="button25" type="radio" name="stars" value="Rate: 5.0★">
+                            <span class="icon">★</span>
+                        </label>
+                    </form><br>
+                    <p id="display5"></p><br>
+                    <script>
+                        $(document).ready(function(){
+                            $('#button21').hide();
+                            $('#button22').hide();
+                            $('#button23').hide();
+                            $('#button24').hide();
+                            $('#button25').hide();
+
+                            $('#button21').click(function(){
+                                $('#display5').empty();
+                                var one = $(this).val();
+                                $('#display5').append(one);
+                            });
+                            $('#button22').click(function(){
+                                $('#display5').empty();
+                                var one = $(this).val();
+                                $('#display5').append(one);
+                            });
+                            $('#button23').click(function(){
+                                $('#display5').empty();
+                                var one = $(this).val();
+                                $('#display5').append(one);
+                            });
+                            $('#button24').click(function(){
+                                $('#display5').empty();
+                                var one = $(this).val();
+                                $('#display5').append(one);
+                            });
+                            $('#button25').click(function(){
+                                $('#display5').empty();
+                                var one = $(this).val();
+                                $('#display5').append(one);
+                            });
+                        })
+                    </script>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <!---this is the comment section--->
+        <h2>Comment Section</h2>
+        <!---append the comment--->
+        <div class="container1">
+            <div class="commentbox">
+                <input type="text" id="nickname" placeholder="Your name..."><br>
+                <textarea cols="30" rows="30" class="mytextarea" id="content" placeholder="Your comment..."></textarea><br>
+                <input type="button" class="submit" id="comment" value="Submit">
+            </div>
+            <div class="comment-list"></div>
+        </div>
+        <!---script for comment section--->
+        <script type="text/javascript">
+            var arr = [{ id: 1, img: "/profilepicture.png", replyName: "John", beReplyName: "", content: "Good website!", time: "2020-07-17 23:42:53", address: "London", replyBody: [] },{ id: 2, img: "/profilepicture.png", replyName: "unknown", beReplyName: "", content: "Need more pictures.", time: "2020-07-06 12:32:13", address: "Malaysia", replyBody: [{ id: 3, img: "", replyName: "Kate", beReplyName: "k", content: "Yeah", time: "2020-07-19 16:15:47", address: "", osname: ""}] },{ id: 3, img: "/profilepicture.png", replyName: "Benny", beReplyName: "Tom", content: "Nice places", time: "2020-07-16 18:34:23", address: "Auckland", replyBody: [] }];
+            $(function () {
+                $(".comment-list").addCommentList({ data: arr, add: "" });
+                $("#comment").click(function () {
+                    var obj = new Object();
+                    var name = $("#nickname").val();
+                    obj.img = "/profilepicture.png";
+                    obj.replyName = name;
+                    obj.content = $("#content").val();
+                    obj.browse = "Auckland";
+                    obj.replyBody = "";
+                    $(".comment-list").addCommentList({ data: [], add: obj });
+                });
+            })
+        </script>
+        </section>
+        
+        <footer>
+            <h4>Resource is from https://www.planetware.com/tourist-attractions/indonesia-ina.htm </h4>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!---login page is needed when user wants to get to Home page--->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="/css/loginpage.css" type="text/css">
+        <script defer src="/js/loginpage.js"></script><!---link the js--->
+    </head>
+    <body>
+        <main id="maintable">
+            <h1 id="header">Login</h1>
+            <div id="mainerrormsg">
+                <p id="errormsg1">Invalid username <span id="errormsg2">and/or password</span></p>
+            </div>
+            <form id="loginform">
+            <input type="text" name="username" id="username" class="loginform2" placeholder="Username">
+            <input type="password" name="password" id="password" class="loginform2" placeholder="Password">
+            <input type="submit" value="Login" id="submitform">
+            </form>
+        </main>
+    </body>
+</html>

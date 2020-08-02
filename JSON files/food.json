@@ -1,0 +1,29 @@
+//this JSON file has been uploaded on GitHub gist
+//https://gist.githubusercontent.com/Ericaan/3303ab8ad7365278599c0044983048f5/raw/8ed562c84e5b9d1a9a52935e21ff03aaf85fdd3b/food.json
+[
+    {
+        "Name": "Indonesian Satay",
+        "Description": "Satay is a meat skewers that are cooked over coals. Thses juicy skewers are usually served with rice cakes/ketupat with peanut sauce poured all over the satay. It is a national dish conceived by street vendors. Satay is practically everywhere and highly addictive.",
+        "Image": "https://images8.design-editor.com/94/9401467/3958%2f5D9B23E6-D32B-DCA1-4272-3C40AD2E7A45.jpg_400"
+    },
+    {
+        "Name": "Beef Rendang",
+        "Description": "This dish originated from Padang, Sumatra. Padang food is famous for its spicyness and richness in flavor. We get to appreciate this dish because it take forever to cook to get that tenderness out of the beef.",
+        "Image": "https://images8.design-editor.com/94/9401467/3958%2f6B70E817-2EE7-5250-176A-FB562A726923.jpg_400"
+    },
+    {
+        "Name": "Fried Rice",
+        "Description": "What makes Indonesian Fried Rice different is the use of sweet thick soy sauce called kecap and garnished with pickled cucumber and carrots. Nasi Goreng/Fried Rice is considered Indonesia's national dish.",
+        "Image": "https://images8.design-editor.com/94/9401467/3958%2fDD49EB81-032B-0BD4-B781-9F95455EEA3A.jpg_400"
+    },
+    {
+        "Name": "Nasi Rawon",
+        "Description": "Nasi Rawon is a dish made of beef stew from East Java. Rawon has this nutty flavour and a deep black color from the use of keluak nut. It is rich in flavour. This dish is best enjoyed with a bowl of rice.",
+        "Image": "https://images8.design-editor.com/94/9401467/3958%2f07F84F45-0F25-222A-6831-D15D21DDBE12.jpg_400"
+    },
+    {
+        "Name": "Sop Buntut/Oxtail Soup",
+        "Description": "Although believed that oxtail soup was invented in London in the 17th century but this Indonesian version of oxtail soup is popular as ever. This dish is a healthy and hearty soup loved by many people. The oxtail is usually fried or barbecued and combined with a soup base.",
+        "Image": "https://images8.design-editor.com/94/9401467/3958%2f1B7DC3B0-E910-0844-D610-045EAC323232.jpg_400"
+    }
+]

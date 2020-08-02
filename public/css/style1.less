@@ -1,0 +1,237 @@
+@color1: #5c0000;
+@color2: white;
+@color3: black;
+@textalign1: center;
+@textalign2: right;
+@textdeco: none;
+@fullsize: 100%;
+
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: sans-serif;
+}
+header{
+	background-color: @color1;
+	padding: 10px;
+	text-align: @textalign2;
+	font-size: 20px;
+	color: @color2;
+}
+header .logo{
+    width: 70px;
+    float: left;
+}
+footer{
+    background-color: @color1;
+	padding: 5px;
+	text-align: @textalign1;
+	font-size: 15px;
+	color: @color2;
+}
+nav{
+	background-color: @color3;
+	padding: 15px;
+	text-align: @textalign1;
+}
+nav a{
+	padding-right: 20px;
+	font-size: 18px;
+	text-decoration: @textdeco;
+	color: @color2;
+}
+a{
+	text-decoration: @textdeco;
+	color: @color2;
+}
+img{
+    border-radius: 5%;
+}
+.imgscreen1{
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+p{
+    text-align: @textalign1;
+}
+aside{
+	float: left;
+	width: 50%;
+	background-color: @color2;
+	padding: 20px;
+}
+aside img{
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+article{
+	float: left;
+	padding: 20px;
+	width: 50%;
+	background-color: @color2;
+}
+article img{
+    width: 35%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+section:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+div{
+    text-align: @textalign1;
+}
+table, input{
+    background-color: @color2;
+    width: @fullsize;
+    font: 17px Calibri;
+    color: @color1;
+}
+table, th, td{
+    border: solid 1px;
+    border-color: @color1;
+    border-collapse: collapse;
+    padding: 5px 5px;
+    text-align: center;
+}
+table img{
+    border: none;
+    width: @fullsize;
+}
+.contactpage, input, label{
+    text-align: center;
+}
+#firstname, #lastname, #email{
+    width: 30%;
+}
+#submit{
+    width: 10%;
+    border-radius: 10%;
+}
+h2{
+    text-align: center;
+}
+hr{
+    color: @color1;
+}
+.container1 {
+    width: 100%;
+}
+#nickname{
+    height: 50px;
+}
+.commentbox {
+    width: 80%;
+    margin: 20px auto;
+}
+.mytextarea {
+    width: 50%;
+    padding: 15px;
+    overflow: auto;
+    word-break: break-all;
+    color: @color1;
+    font-size: 1em;
+    resize: none;
+    height: 100px;
+}
+.comment-list {
+    width: 80%;
+    margin: 20px auto;
+    clear: both;
+    padding-top: 20px;
+}
+.comment-list .comment-info {
+    position: relative;
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.comment-list .comment-info header {
+    width: 10%;
+    position: absolute;
+}
+.comment-list .comment-info header img {
+    width: 100%;
+    border-radius: 50%;
+    padding: 5px;
+}
+.comment-list .comment-info .comment-right {
+    padding: 5px 0px 5px 11%;
+}
+.comment-list .comment-info .comment-right h3 {
+    margin: 5px 0px;
+}
+.comment-list .comment-info .comment-right .comment-content-header {
+    height: 25px;
+}
+.comment-list .comment-info .comment-right .comment-content-header span,
+.comment-list .comment-info .comment-right .comment-content-footer span {
+    padding-right: 2em;
+    color: #aaa;
+}
+.comment-list .comment-info .comment-right .comment-content-header span,.comment-list .comment-info .comment-right .comment-content-footer span.reply-btn,.send,.reply-list-btn {
+    cursor: pointer;
+}
+.comment-list .comment-info .comment-right .reply-list {
+    border-left: 3px solid #ccc;
+    padding-left: 7px;
+}
+.comment-list .comment-info .comment-right .reply-list .reply {
+    border-bottom: 1px dashed #ccc;
+}
+.comment-list .comment-info .comment-right .reply-list .reply div span {
+    padding-left: 10px;
+}
+.comment-list .comment-info .comment-right .reply-list .reply p span {
+    padding-right: 2em;
+    color: #aaa;
+}
+.submit{
+    background-color:@color1;
+    width: 50px;
+    padding-right: 55px;
+    color: @color2;
+    text-align: center;
+}
+#nickname{
+    width: 30%;
+}
+@media(max-width:600px){
+    aside,article{
+		width: @fullsize;
+		height: auto;
+	}
+    aside img{
+        width: 40%;
+    } 
+    article img{
+        width: 35%;
+    }
+	nav{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	nav a{
+		margin: 10px;
+		line-height: 50px;
+	}
+	.imgscreen1{
+		width: @fullsize;
+	}
+    #firstname, #lastname, #email{
+    width: 50%;
+    }
+    #submit{
+        width: 20%;
+        border-radius: 10%;
+    }
+}

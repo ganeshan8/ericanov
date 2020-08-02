@@ -1,0 +1,29 @@
+//this JSON file has been uploaded on GitHub gist
+//https://gist.githubusercontent.com/Ericaan/3303ab8ad7365278599c0044983048f5/raw/bf5a65aa5cf0f1bb7ffb83d2502c6cf2b76dd9b2/placesToGo.json
+[
+    {
+        "Name": "Beaches of Bali",
+        "Description": "Kuta is the best known beach and is great for those who like to combine sun, surfing, and socializing. Because of its popularity, you'll find no shortage of restaurants and activities here. If you're looking for something a little quiter and less crowded, Nusa Dua is still a beauty, but draws fewer tourists. Sanur beach is the place to go for a little more culture as well as great water sports.",
+        "Image": "https://www.planetware.com/photos-large/INA/indonesia-beaches-of-bali.jpg"
+    },
+    {
+        "Name": "Borobudur",
+        "Description": "This ancient temple is one of the most famous and culturally significant landmarks in Indonesia. Borobudur was built in the 8th century and constructed in the shape of a traditional Buddhist mandala. It is a UNESCO World Heritage site and is considered one of the greatest Buddhist sites in the world. Borobudur lies near Yogyakarta, an old Javanese city known for its rich cultural and historical offerings.",
+        "Image": "https://www.planetware.com/photos-large/INA/indonesia-borobudur.jpg"
+    },
+    {
+        "Name": "Orangutans of Borneo",
+        "Description": "Borneo is a great place to visit these beautiful and endangered creatures. Tanjung Puting National Park in Kalimantan, Borneo, is home to the largest orangutan population in the world, as well as other primates, birds, and reptiles.",
+        "Image": "https://www.planetware.com/photos-large/INA/indonesia-orangutans.jpg"
+    },
+    {
+        "Name": "Gili Islands",
+        "Description": "The Gili Islands are a major draw in Lombok, which has risen in popularity among backpackers and tourists in recent years. These picturesque islands offer beaches that rival those of Bali in their beauty, as well as opportunities for diving and even snorkeling at a turtle sanctuary. Kayaking is also popular in the Gilis.",
+        "Image": "https://www.planetware.com/photos-large/INA/indonesia-gili-islands.jpg"
+    },
+    {
+        "Name": "Komodo National Park",
+        "Description": "Komodo National Park, a UNESCO World Heritage site, encompasses five main islands and a number of smaller ones, as well as the surrounding marine areas. The waters off these islands are some of the richest and most diverse in the world. The komodo dragons are the stars of the show on any visit to the park, but visitors can also hike, snorkel, go canoeing, or visit small villages on the islands. Visitors must arrive by boat and there is an entrance fee plus additional costs for transportation, guide services, and other activities.",
+        "Image": "https://www.planetware.com/photos-large/INA/indonesia-komodo-national-park.jpg"
+    }
+]

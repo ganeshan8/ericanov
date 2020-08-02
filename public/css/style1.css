@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+header {
+  background-color: #5c0000;
+  padding: 10px;
+  text-align: right;
+  font-size: 20px;
+  color: white;
+}
+header .logo {
+  width: 70px;
+  float: left;
+}
+footer {
+  background-color: #5c0000;
+  padding: 5px;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+}
+nav {
+  background-color: black;
+  padding: 15px;
+  text-align: center;
+}
+nav a {
+  padding-right: 20px;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+img {
+  border-radius: 5%;
+}
+.imgscreen1 {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+p {
+  text-align: center;
+}
+aside {
+  float: left;
+  width: 50%;
+  background-color: white;
+  padding: 20px;
+}
+aside img {
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+article {
+  float: left;
+  padding: 20px;
+  width: 50%;
+  background-color: white;
+}
+article img {
+  width: 35%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+div {
+  text-align: center;
+}
+table,
+input {
+  background-color: white;
+  width: 100%;
+  font: 17px Calibri;
+  color: #5c0000;
+}
+table,
+th,
+td {
+  border: solid 1px;
+  border-color: #5c0000;
+  border-collapse: collapse;
+  padding: 5px 5px;
+  text-align: center;
+}
+table img {
+  border: none;
+  width: 100%;
+}
+.contactpage,
+input,
+label {
+  text-align: center;
+}
+#firstname,
+#lastname,
+#email {
+  width: 30%;
+}
+#submit {
+  width: 10%;
+  border-radius: 10%;
+}
+h2 {
+  text-align: center;
+}
+hr {
+  color: #5c0000;
+}
+.container1 {
+  width: 100%;
+}
+#nickname {
+  height: 50px;
+}
+.commentbox {
+  width: 80%;
+  margin: 20px auto;
+}
+.mytextarea {
+  width: 50%;
+  padding: 15px;
+  overflow: auto;
+  word-break: break-all;
+  color: #5c0000;
+  font-size: 1em;
+  resize: none;
+  height: 100px;
+}
+.comment-list {
+  width: 80%;
+  margin: 20px auto;
+  clear: both;
+  padding-top: 20px;
+}
+.comment-list .comment-info {
+  position: relative;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+.comment-list .comment-info header {
+  width: 10%;
+  position: absolute;
+}
+.comment-list .comment-info header img {
+  width: 100%;
+  border-radius: 50%;
+  padding: 5px;
+}
+.comment-list .comment-info .comment-right {
+  padding: 5px 0px 5px 11%;
+}
+.comment-list .comment-info .comment-right h3 {
+  margin: 5px 0px;
+}
+.comment-list .comment-info .comment-right .comment-content-header {
+  height: 25px;
+}
+.comment-list .comment-info .comment-right .comment-content-header span,
+.comment-list .comment-info .comment-right .comment-content-footer span {
+  padding-right: 2em;
+  color: #aaa;
+}
+.comment-list .comment-info .comment-right .comment-content-header span,
+.comment-list .comment-info .comment-right .comment-content-footer span.reply-btn,
+.send,
+.reply-list-btn {
+  cursor: pointer;
+}
+.comment-list .comment-info .comment-right .reply-list {
+  border-left: 3px solid #ccc;
+  padding-left: 7px;
+}
+.comment-list .comment-info .comment-right .reply-list .reply {
+  border-bottom: 1px dashed #ccc;
+}
+.comment-list .comment-info .comment-right .reply-list .reply div span {
+  padding-left: 10px;
+}
+.comment-list .comment-info .comment-right .reply-list .reply p span {
+  padding-right: 2em;
+  color: #aaa;
+}
+.submit {
+  background-color: #5c0000;
+  width: 50px;
+  padding-right: 55px;
+  color: white;
+  text-align: center;
+}
+#nickname {
+  width: 30%;
+}
+@media (max-width: 600px) {
+  aside,
+  article {
+    width: 100%;
+    height: auto;
+  }
+  aside img {
+    width: 40%;
+  }
+  article img {
+    width: 35%;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav a {
+    margin: 10px;
+    line-height: 50px;
+  }
+  .imgscreen1 {
+    width: 100%;
+  }
+  #firstname,
+  #lastname,
+  #email {
+    width: 50%;
+  }
+  #submit {
+    width: 20%;
+    border-radius: 10%;
+  }
+}
